@@ -72,6 +72,20 @@
 		3A53339D1A93CCE90006A8EE /* dropbox_imp_darwin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = dropbox_imp_darwin.mm; sourceTree = "<group>"; };
 		3A53339F1A93CCE90006A8EE /* index.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = index.cc; sourceTree = "<group>"; };
 		3A5333A51A93E43F0006A8EE /* search-index.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "search-index.mm"; sourceTree = "<group>"; };
+		3AF1BFF71AA78145000406C4 /* db.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = db.hh; sourceTree = "<group>"; };
+		3AF1BFF81AA78145000406C4 /* doc.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = doc.hh; sourceTree = "<group>"; };
+		3AF1BFF91AA78145000406C4 /* dropbox_imp.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dropbox_imp.hh; sourceTree = "<group>"; };
+		3AF1BFFA1AA78145000406C4 /* index.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = index.hh; sourceTree = "<group>"; };
+		3AF1BFFB1AA78145000406C4 /* iterator_imp.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = iterator_imp.hh; sourceTree = "<group>"; };
+		3AF1BFFC1AA78145000406C4 /* keyspace.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = keyspace.hh; sourceTree = "<group>"; };
+		3AF1BFFD1AA78145000406C4 /* netreach.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = netreach.hh; sourceTree = "<group>"; };
+		3AF1BFFE1AA78145000406C4 /* recents-index.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "recents-index.hh"; sourceTree = "<group>"; };
+		3AF1BFFF1AA78145000406C4 /* search-index.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "search-index.hh"; sourceTree = "<group>"; };
+		3AF1C0001AA78145000406C4 /* str.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = str.hh; sourceTree = "<group>"; };
+		3AF1C0011AA78145000406C4 /* thread.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = thread.hh; sourceTree = "<group>"; };
+		3AF1C0021AA78145000406C4 /* timer.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = timer.hh; sourceTree = "<group>"; };
+		3AF1C0031AA78145000406C4 /* unittest.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = unittest.hh; sourceTree = "<group>"; };
+		3AF1C0041AA78145000406C4 /* version.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = version.hh; sourceTree = "<group>"; };
 		3AF237451AA1123300ACEC19 /* leveldb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = leveldb.xcodeproj; path = ../leveldb/leveldb.xcodeproj; sourceTree = "<group>"; };
 		3AFB58D21A945AC8007B8A0C /* str.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = str.cc; sourceTree = "<group>"; };
 		3AFB58D41A94701A007B8A0C /* recents-index.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "recents-index.cc"; sourceTree = "<group>"; };
@@ -114,18 +128,32 @@
 			isa = PBXGroup;
 			children = (
 				3A53328C1A8D94B10006A8EE /* dbxmd.h */,
-				3A5332A51A8D950D0006A8EE /* dbxmd.cc */,
-				3AFB58D61A94719E007B8A0C /* version.cc */,
+				3AF1BFF71AA78145000406C4 /* db.hh */,
+				3AF1BFF81AA78145000406C4 /* doc.hh */,
+				3AF1BFF91AA78145000406C4 /* dropbox_imp.hh */,
+				3AF1BFFA1AA78145000406C4 /* index.hh */,
+				3AF1BFFB1AA78145000406C4 /* iterator_imp.hh */,
+				3AF1BFFC1AA78145000406C4 /* keyspace.hh */,
+				3AF1BFFD1AA78145000406C4 /* netreach.hh */,
+				3AF1BFFE1AA78145000406C4 /* recents-index.hh */,
+				3AF1BFFF1AA78145000406C4 /* search-index.hh */,
+				3AF1C0001AA78145000406C4 /* str.hh */,
+				3AF1C0011AA78145000406C4 /* thread.hh */,
+				3AF1C0021AA78145000406C4 /* timer.hh */,
+				3AF1C0031AA78145000406C4 /* unittest.hh */,
+				3AF1C0041AA78145000406C4 /* version.hh */,
 				3A53338F1A8EBFC00006A8EE /* db.cc */,
-				3A5333921A8EBFC00006A8EE /* netreach_darwin.mm */,
+				3A5332A51A8D950D0006A8EE /* dbxmd.cc */,
+				3A53339F1A93CCE90006A8EE /* index.cc */,
+				3AFB58DA1A95204F007B8A0C /* iterator.cc */,
+				3AFB58D41A94701A007B8A0C /* recents-index.cc */,
+				3AFB58D21A945AC8007B8A0C /* str.cc */,
 				3A5333931A8EBFC00006A8EE /* thread_darwin.cc */,
 				3A5333991A8EC6080006A8EE /* timer_darwin.cc */,
+				3AFB58D61A94719E007B8A0C /* version.cc */,
 				3A53339D1A93CCE90006A8EE /* dropbox_imp_darwin.mm */,
-				3A53339F1A93CCE90006A8EE /* index.cc */,
-				3AFB58D21A945AC8007B8A0C /* str.cc */,
+				3A5333921A8EBFC00006A8EE /* netreach_darwin.mm */,
 				3A5333A51A93E43F0006A8EE /* search-index.mm */,
-				3AFB58D41A94701A007B8A0C /* recents-index.cc */,
-				3AFB58DA1A95204F007B8A0C /* iterator.cc */,
 			);
 			path = dbxmd;
 			sourceTree = "<group>";
